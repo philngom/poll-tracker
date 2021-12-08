@@ -1,15 +1,15 @@
 
 body {
     /* feel free to update these css variables for a quick theme */
-    
+
     --color1: white;
     --color2: white;
     --color3: white;
     --color4: white;
     --color5: white;
-    
+
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-        
+
     /* --color1: hsla(349, 69%, 76%, 1);
     --color2: hsla(207, 67%, 44%, 1);
     --color3: hsla(200, 61%, 56%, 1);
@@ -21,12 +21,12 @@ body {
     --color3: hsla(315, 37%, 86%, 1);
     --color4: hsla(45, 73%, 98%, 1);
     --color5: hsla(224, 40%, 79%, 1); */
-    
+
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
     --footer-height: 25px;
-    
+
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
 }
@@ -78,7 +78,7 @@ header img {
 p {
     margin: var(--gutter);
 }
-  
+
 footer {
     position: fixed;
     width: 100%;
@@ -88,4 +88,86 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+
+body {
+    font-size: 1.2em;
+    background-color: orange;
+}
+
+.form {
+    margin: 10px;
+    width: 80vw;
+    height: 25vh;
+    border: 0.2em red solid;
+    background-color: red;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form .options {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content:space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.form .questions {
+    margin: 10px;
+}
+
+.displays {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.display {
+    border: 0.2em red solid;
+    background-color: red;
+    border-radius: 2em;
+    width: 45%;
+}
+
+h4 {
+    /* margin-top: -50px; */
+}
+
+.current-poll {
+    grid-template-rows:repeat(4, 1fr);
+    text-align: center;
+}
+.option-1-poll, .option-2-poll {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.inc-dec-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.opt-1-words, .opt-2-words {
+    display: inline-block;
+}
+
+.past-poll {
+    text-align: center;
+    width: 80%;
+    height: 100px;
+    border: 1px solid orange;
+    border-radius: 2em;
+    background-color: orange;
+}
+
+.past-poll p {
+    margin: 0;
 }
